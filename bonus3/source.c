@@ -17,7 +17,7 @@ int main(int argc, char **argv)
     }
     fread(buf, 1, 66, stream);
     buf[65] = '\0';
-    value = atoi(buf);
+    value = atoi(argv[1]);
     buf[value] = '\0';
     fread(&buf[66], 1, 65, stream);
     fclose(stream);

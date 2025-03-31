@@ -13,8 +13,8 @@ int main(void)
 
 void pp(char *buf)
 {
-    char str1;
-    char str2;
+    char str1[20];
+    char str2[20];
     size_t len;
 
     p(str1, " - ");
